@@ -1,0 +1,11 @@
+2019-11-25T06:37:09+00:00 CRITICAL Uncaught Error: Call to undefined function mb_detect_encoding() in /var/www/html/wp-content/plugins/loco-translate/lib/compiled/gettext.php:13
+Stack trace:
+#0 /var/www/html/wp-content/plugins/loco-translate/src/gettext/Data.php(58): LocoPoParser->__construct('# Copyright (C)...')
+#1 /var/www/html/wp-content/plugins/loco-translate/src/gettext/Data.php(34): Loco_gettext_Data::fromSource('# Copyright (C)...')
+#2 /var/www/html/wp-content/plugins/loco-translate/src/gettext/Metadata.php(70): Loco_gettext_Data::load(Object(Loco_fs_File))
+#3 /var/www/html/wp-content/plugins/loco-translate/src/admin/bundle/LocaleController.php(78): Loco_gettext_Metadata::load(Object(Loco_fs_File))
+#4 /var/www/html/wp-content/plugins/loco-translate/src/mvc/AdminRouter.php(246): Loco_admin_bundle_LocaleController->render()
+#5 /var/www/html/wp-includes/class-wp-hook.php(286): Loco_mvc_AdminRouter->renderPage('')
+#6 /var/www/html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#7 /var/www/html/wp-includes/plugin.php( in /var/www/html/wp-content/plugins/loco-translate/lib/compiled/gettext.php on line 13
+
